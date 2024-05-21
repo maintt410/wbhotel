@@ -45,28 +45,55 @@
         </li>
       </ul>
 
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-outline-dark shadow-none me-lg-2 me-3" data-bs-toggle="modal" data-bs-target="#LoginModal">
-        Login
-      </button>
-      <button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#RegisterModal">
-        Register
-      </button>
-    </div>
-  </div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-dark shadow-none me-lg-2 me-3" data-bs-toggle="modal" data-bs-target="#LoginModal">
+  Login
+</button>
+<button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#RegisterModal">
+  Register
+</button>
+</div>
+</div>
 </nav>
 
 <!-- Login Modal -->      
-<div class="modal fade" id="LoginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form>
+<div class="modal fade" id="LoginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form>
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">
+          <h5 class="modal-title" id="loginModalLabel">
             <i class="bi bi-person-circle me-2"></i>User Login</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-control">
+          </div>
+          <div class="mb-4">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control">
+          </div>
+          <div class="d-flex align-content-center justify-content-between">
+            <button type="submit" class="btn btn-dark shadow-none">Login</button>
+            <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forgot Password?</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="RegisterModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registerModalLabel">User Registration</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
         <div class="mb-3">
           <label class="form-label">Email address</label>
           <input type="email" class="form-control">
@@ -75,30 +102,10 @@
           <label class="form-label">Password</label>
           <input type="password" class="form-control">
         </div>
-        <div class="d-flex align-content-center justify-content-between">
-          <button type="submit" class="btn btn-dark shadow-none">Login</button>
-          <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forgot Password?</a>
-          <!-- <button type="button" class="btn btn-primary">Maybe could be Register redirect?</button> -->
-        </div>
-        </form>
-      </div>
-    </div>
-</div>
-
-<!-- Register Modal -->
-<div class="modal fade" id="RegisterModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
+        <button type="button" class="btn btn-primary">Register</button>
       </div>
     </div>
   </div>

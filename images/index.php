@@ -87,25 +87,67 @@
 
 <!-- Register Modal -->
 <div class="modal fade" id="RegisterModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="registerModalLabel">User Registration</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div class="mb-3">
-          <label class="form-label">Email address</label>
-          <input type="email" class="form-control">
+        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">
+            Note: Your detail must match with your ID (ID Card, passport, driving license, etc,...) that will be required during check-in.
+        </span>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-md-6 mb-2">
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-md-6 mb-2">
+              <label class="form-label">ID Number</label>
+              <input type="number" class="form-control">
+            </div>
+            <div class="col-md-6 mb-2">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="col-md-6 mb-2">
+              <label class="form-label">Phone Number</label>
+              <input type="number" class="form-control">
+            </div>
+            <div class="col-md-6 mb-2">
+              <label class="form-label">Your profile picture</label>
+              <input type="file" class="form-control">
+            </div>
+            <div class="col-md-12 mb-2">
+                <label class="form-label">Address</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-md-6 mb-2">
+                <label class="form-label">Zipcode</label>
+                <input type="number" class="form-control">
+              </div>
+              <div class="col-md-6 mb-2">
+                <label class="form-label">Date of birth</label>
+                <input type="date" class="form-control">
+              </div>
+              <div class="col-md-6 mb-2">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control">
+              </div>
+              <div class="col-md-6 mb-2">
+                <label class="form-label">Confirm Password</label>
+                <input type="password" class="form-control">
+              </div>
+          </div>
         </div>
-        <div class="mb-4">
-          <label class="form-label">Password</label>
-          <input type="password" class="form-control">
+        <div class="text-center">
+            <button type="submit" class="btn btn-dark shadow-none my-3">Register</button>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Register</button>
       </div>
     </div>
   </div>

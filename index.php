@@ -171,16 +171,22 @@
   <div class="swiper swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="images/carousel/1.png" />
+        <img src="images/carousel/1.png" class="w-100 d-block"/>
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        <img src="images/carousel/2.png" class="w-100 d-block"/>
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        <img src="images/carousel/3.png" class="w-100 d-block"/>
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        <img src="images/carousel/4.png" class="w-100 d-block"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carousel/5.png" class="w-100 d-block"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carousel/6.png" class="w-100 d-block"/>
       </div>
     </div>
     <div class="swiper-button-next"></div>
@@ -197,6 +203,8 @@
     var swiper = new Swiper(".swiper-container", {
       spaceBetween: 30,
       effect: "fade",
+      loop: true,
+      // 43:00
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
